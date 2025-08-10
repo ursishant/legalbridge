@@ -1,0 +1,70 @@
+/* Global CSS variables */
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --radius: 0.5rem;
+  --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--light);
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e9ecef;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.main-content {
+  min-height: calc(100vh - 120px);
+  padding: 2rem 1rem;
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #e9ecef;
+  padding: 1rem;
+  text-align: center;
+}
