@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/legalbridge/", // needed for react-router-dom
+    publicPath: process.env.PUBLIC_URL || '/', // needed for react-router-dom
     clean: true // ensures fresh build
   },
   module: {
