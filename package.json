@@ -9,10 +9,14 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2"
   },
+  "engines": {
+  "node": "20.x"
+},
   "scripts": {
-    "start": "webpack serve --mode development",
-    "dev": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+  "prebuild": "chmod +x node_modules/.bin/webpack",
+  "start": "webpack serve --mode development",
+  "dev": "webpack serve --mode development --open",
+  "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
