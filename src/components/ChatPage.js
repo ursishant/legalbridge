@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { GoogleGenerativeAI } from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 
 const API_KEY = 'AIzaSyBBnHltxn2ip2T5yEpTYqgRX-avoO8T5kU';
 
@@ -52,7 +52,7 @@ const ChatPage = () => {
   const genAIRef = useRef(null);
   useEffect(() => {
     try {
-      genAIRef.current = new GoogleGenerativeAI(API_KEY);
+      genAIRef.current = new GoogleGenAI(API_KEY);
     } catch (err) {
       console.error('Failed to initialise generative AI', err);
     }
