@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { GoogleGenerativeAI } from '@google/genai';
 
-const API_KEY = 'AIzaSyBBnHltxn2ip2T5yEpTYqgRX-avoO8T5kU';
+const API_KEY = 'YOUR_API_KEY';
 
 // Initialize GoogleGenerativeAI once
 let genAIInstance;
