@@ -14,4 +14,4 @@
  *
  */
 // Get your API key from: https://makersuite.google.com/app/apikey
-export const API_KEY = 'AIzaSyAxDSI4leBdg4wToGaEAjj7EDTSl7P6bo0';
+export const API_KEY = '';
